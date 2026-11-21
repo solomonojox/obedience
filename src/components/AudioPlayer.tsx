@@ -219,7 +219,7 @@ export default function AudioPlayer() {
         autoPlay
         playsInline
         preload="auto"
-        src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=romantic-wedding-110098.mp3"
+        src="/audio/iyawo_mi.mp3"
       />
 
       {/* Floating Luxury Music Player Dock */}
