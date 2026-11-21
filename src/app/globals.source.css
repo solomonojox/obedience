@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --wine-dark: #3E0C13;
+  --wine-primary: #58111A;
+  --wine-light: #722F37;
+  --wine-muted: #8E3B46;
+  --gold-primary: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-dark: #997A15;
+  --gold-amber: #C5A059;
+  --champagne: #FAF6F0;
+  --cream: #FDFBF7;
+  --obsidian: #1A1516;
+}
+
+/* Luxury Editorial Fonts */
+.font-serif-title {
+  font-family: 'Playfair Display', Didot, 'Bodoni MT', 'Cinzel', Georgia, serif;
+}
+
+.font-serif-sub {
+  font-family: 'Cormorant Garamond', Garamond, 'Baskerville', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Smooth Scrolling & Custom Gold-Wine Scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #722F37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #58111A;
+}
+
+/* Gold Gradient Shimmer */
+.gold-shimmer {
+  background: linear-gradient(
+    135deg,
+    #D4AF37 0%,
+    #FFF4D0 45%,
+    #D4AF37 70%,
+    #AA8010 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(
+    135deg,
+    #D4AF37 0%,
+    #F3E5AB 50%,
+    #C5A059 100%
+  );
+}
+
+.wine-gradient-bg {
+  background: linear-gradient(
+    145deg,
+    #3E0C13 0%,
+    #58111A 50%,
+    #722F37 100%
+  );
+}
+
+/* Magazine Border Styles */
+.magazine-frame {
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 0 6px #FDFBF7, 0 0 0 7px rgba(114, 47, 55, 0.3);
+}
+
+.magazine-frame-dark {
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 0 6px #1A1516, 0 0 0 7px rgba(212, 175, 55, 0.4);
+}
+
+/* Subtle Film Grain Texture Overlay */
+.editorial-paper {
+  background-color: #FDFBF7;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
