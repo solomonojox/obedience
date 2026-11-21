@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 export const metadata: Metadata = {
   title: "OBIDENCE 2026 | The Wedding Issue | Obinna & Evidence",
@@ -39,6 +40,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#FDFBF7] text-[#1A1516] antialiased selection:bg-[#722F37] selection:text-[#F3E5AB]">
+        <BackgroundMusic />
         {children}
       </body>
     </html>

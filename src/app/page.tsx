@@ -53,7 +53,7 @@ export default function WeddingHome() {
       <InsideBackCover />
 
       {/* Floating Classical/Romantic Background Music Player */}
-      <AudioPlayer />
+      {/* <AudioPlayer /> */}
     </main>
   );
 }
